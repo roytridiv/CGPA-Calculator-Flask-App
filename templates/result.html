@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>HOLA BY TRIDIV</title>
+
+    <!-- Icons font CSS-->
+    <!-- <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all"> -->
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <!-- <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all"> -->
+    <!-- <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all"> -->
+
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+</head>
+
+<body>
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <img src="{{ url_for('static',filename='logo.png') }}" style=" display: block; 
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;">
+
+                    <form action="http://127.0.0.1:5000">
+
+                        <h1 class="title" style="text-align: center; font-family: 'Orbitron' , sans-serif ;">Your
+                            Estimated CGPA</h1>
+                        <div class="result_box">
+                            <p class="res-box" style="font-size: xxx-large;
+                            font-family: 'digital-7' ,'Orbitron', sans-serif;
+                            text-align: center;
+                            border-radius: 65px;
+                            border: 2px solid #673AB7;
+                            padding: 10px; 
+                            width: 620px;
+                            height: 100px;"> {{total_cgpa}} </p>
+                        </div>
+
+                        <h2 class="title"
+                            style="text-align: center; font-family: 'Orbitron' ,sans-serif; padding-top:40px ; ">Your
+                            Estimated GPA</h2>
+
+                            <div class="result_box2">
+                                <p class="res-box2" style="font-size: xx-large;
+                                font-family: 'digital-7' ,'Orbitron', sans-serif;
+                                text-align: center;
+                                border-radius: 65px;
+                                border: 2px solid #E91E63;
+                                padding: 20px; 
+                                height: 100px;"> {{total_gpa}} </p>
+                            </div>
+
+
+                            <div class="border border-light p-3 mb-4">
+
+                                <div class="text-center">
+                                    <button class="btn btn-primary helo" style="color:black!important;
+                                    margin-top: 50px;
+                                    background-color: gold!important; 
+                                    border-radius: 5em!important;
+                                    border-color: #FFE082!important;
+                                    width: 70%;
+                                    height: 50px;">Calculate again</button>
+                                </div>
+                            </div>
+
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

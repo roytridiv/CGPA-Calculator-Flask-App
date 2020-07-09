@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>HOLA BY TRIDIV</title>
+
+    <!-- Icons font CSS-->
+    <!-- <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all"> -->
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <!-- <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all"> -->
+    <!-- <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all"> -->
+
+    <!-- Main CSS-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+</head>
+
+<body>
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <img src= "{{ url_for('static',filename='logo.png') }}" style=" display: block; 
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;"> 
+
+                     <!-- <h2 class="title" style="text-align: center; font-family: sans-serif ;">Calculate your CGPA</h2>  -->
+                     <small style="
+                     text-align: justify;
+                     display: block;
+                     color: #E65100;
+                     font-size: medium; 
+                     margin: 20px;">This is a cumulative GPA calculator. There are options for six courses input for calculaton.
+                        You can leave any course input box empty if you have taken fewer courses.
+                        But you must fill the <strong style="color: red;">Previous CGPA</strong> and  <strong style="color: red;">Current credit</strong> (they are required fields) </small>
+                    <form method="POST" action = "http://127.0.0.1:5000/result">
+
+                        <div class="form-group" style="justify-content: space-around;">
+                            <label for="exampleInputEmail1">Current CGPA</label>
+                            <input type="text" class="form-control" name="cur_cgpa" placeholder="Enter current CGPA" required>
+                          </div>
+
+                        
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Current Credits</label>
+                            <input type="text" class="form-control"  name="cur_credit" placeholder="Enter current credit" required>
+                          </div>
+
+                        <div class="row row-space">
+
+                            <div class="form-group">
+                                <label for="credit_1">Course 1 Credit</label>
+                                <input type="text" max="4" class="form-control" name="credit_1" name="credit1"
+                                    placeholder="Enter Credit of course 1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gpa_1">Course 1 GPA</label>
+                                <input type="text" min="1" class="form-control" name="gpa_1"
+                                    placeholder="Enter Credit of gpa 1">
+                            </div>
+
+                        </div>
+
+                        <div class="row row-space">
+
+                            <div class="form-group">
+                                <label for="credit_2">Course 2 Credit</label>
+                                <input type="text" min="1" class="form-control" name="credit_2"
+                                    placeholder="Enter Credit of course 2">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gpa_2">Course 2 GPA</label>
+                                <input type="text" min="1" class="form-control" name="gpa_2"
+                                    placeholder="Enter Credit of gpa 2">
+                            </div>
+
+                        </div>
+
+                        <div class="row row-space">
+
+                            <div class="form-group">
+                                <label for="credit_3">Course 3 Credit</label>
+                                <input type="text" min="1" class="form-control" name="credit_3"
+                                    placeholder="Enter Credit of course 3">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gpa_3">Course 3 GPA</label>
+                                <input type="text" min="1" class="form-control" name="gpa_3"
+                                    placeholder="Enter Credit of gpa 3">
+                            </div>
+
+                        </div>
+
+                        <div class="row row-space">
+
+                            <div class="form-group">
+                                <label for="credit_4">Course 4 Credit</label>
+                                <input type="text" min="1" class="form-control" name="credit_4"
+                                    placeholder="Enter Credit of course 4">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gpa_4">Course 4 GPA</label>
+                                <input type="text" min="1" class="form-control" name="gpa_4"
+                                    placeholder="Enter Credit of gpa 4">
+                            </div>
+
+                        </div>
+
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn--green" style="width: 100%;" type="submit">Submit</button>
+                        </div>
+
+                        <p style="
+                        margin-top: 50px;
+                        text-align: center;
+                        color: black;
+                        font-family: 'Orbitron', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+                        font-size: larger;
+                        ">
+                        Developed by <a href="http://tridivroy.xyz/" target="_blank" style="color: #546E7A;">Tridiv Roy</a>
+                    </p>
+                    <img src="{{ url_for('static',filename='pic.png') }}"  style="display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;">
+
+                    </form>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+
+
+   .font-robo {
+    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  }
+ 
+
+  .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .row-space {  
+    justify-content: space-around;
+  
+  }
+  
+  
+  /* ==========================================================================
+     #BACKGROUND
+     ========================================================================== */
+  .bg-blue {
+    background: #e60f61;
+    background-image: linear-gradient(to bottom right,
+    #009688, 
+    #00BCD4, 
+    #2196F3,
+    #E91E63);
+  
+  }
+  
+
+  /* ==========================================================================
+     #SPACING
+     ========================================================================== */
+  .p-t-100 {
+    padding-top: 100px;
+  }
+  
+  .p-t-20 {
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  .p-t-20-2 {
+    
+    padding-top: 70px;
+  }
+  
+  .p-b-100 {
+    padding-bottom: 100px;
+  }
+  
+
+  /* ==========================================================================
+     #WRAPPER
+     ========================================================================== */
+  .wrapper {
+    margin: auto;
+  }
+  
+  .wrapper--w680 {
+    max-width: 800px;
+  }
+  
+
+  /* ==========================================================================
+     #BUTTON
+     ========================================================================== */
+  .btn {
+    align-items: center;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .btn--radius {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 20px;
+  }
+  
+  .btn--green {
+    background: #14f3e8;
+  }
+  
+  .btn--green:hover {
+    background: #4dae3c;
+  }
+  
+  
+  .my_button{
+    align-self: center;
+    margin-top: 50px;
+    background-color: gold; 
+    border-radius: 5em;
+    width: 70%;
+    height: 50px;
+  }
+  .my_button:hover{
+    background-color: gold; 
+  
+  }
+  
+  
+  .helo:hover{
+    background-color: #FF8A65!important; 
+  }
+  
+  .helo{
+    color:black!important;
+    margin-top: 50px;
+    background-color: gold!important; 
+    border-radius: 5em!important;
+    border-color: #FFE082!important;
+    width: 70%;
+    height: 50px;
+  }
+  
+  
+  
+  
+  
+  /* ==========================================================================
+     #TITLE
+     ========================================================================== */
+  .title {
+    margin-bottom: 67px!important;
+  }
+  
+  /* ==========================================================================
+     #CARD
+     ========================================================================== */
+  .card {
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  
+  .card-1 {
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-1 .card-heading {
+    /* background: url("../images/bg-head-02.jpg") center center/cover no-repeat; */
+    background: url("https://source.unsplash.com/960x296/?mathematics,nature,calculation") center center/cover no-repeat;
+    
+    padding-top: 210px;
+  }
+  
+  .card-1 .card-body {
+    padding: 0 90px;
+    padding-top: 55px;
+    padding-bottom: 65px;
+  }
+  
+
+
+  .res-box {
+    font-size: xx-large;
+    font-family: 'digital-7' ,'Orbitron', sans-serif;
+    text-align: center;
+    border-radius: 65px;
+    border: 2px solid #673AB7;
+    padding: 10px; 
+    width: 620px;
+    height: 100px;
+  }
+  
+  .res-box2 {
+    font-size: xx-large;
+    font-family: 'digital-7' ,'Orbitron', sans-serif;
+    text-align: center;
+    border-radius: 65px;
+    border: 2px solid #E91E63;
+    padding: 20px; 
+    height: 100px;
+  }
+
+
+  
+  @font-face{
+    font-family:'digital-7';
+    src: url("{{ url_for('static',filename='styles/digital-7.ttf') }}");
+   }
+  
+  
+  
